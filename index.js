@@ -101,6 +101,18 @@ async function run() {
                         });
                     }
 
+                }).catch(function (err) {
+                       console.log("Sorry,there is an error.");
+                    console.log(err);
+                });
+        });
+
+
+           const result = await promise;
+          console.log(result);
+    }
+
+
 let html = `< !DOCTYPE html >
 <html lang="en">
     <head>
