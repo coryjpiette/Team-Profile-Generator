@@ -102,14 +102,14 @@ async function run() {
                     }
 
                 }).catch(function (err) {
-                       console.log("Sorry, there is an error.");
+                    console.log("Sorry, there is an error.");
                     console.log(err);
                 });
         });
 
 
-           const result = await promise;
-          console.log(result);
+        const result = await promise;
+        console.log(result);
     }
 
     function displayTitle(employee) {
@@ -148,7 +148,7 @@ async function run() {
         return html;
     }
 
-let html = `< !DOCTYPE html >
+    let html = `< !DOCTYPE html >
 <html lang="en">
     <head>
         <meta charset="UTF-8">
