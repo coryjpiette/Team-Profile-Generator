@@ -37,6 +37,39 @@ function runInquirer() {
         .prompt(promptArray);
 }
 
+function runManagerInquirer() {
+    const promptArray = [{
+        type: "input",
+        message: "What is your office number?",
+        name: "officeNumber"
+    }];
+
+    return inquirer
+        .prompt(promptArray);
+}
+
+function runEngineerInquirer() {
+    const promptArray = [{
+        type: "input",
+        message: "What is your github?",
+        name: "github"
+    }];
+
+    return inquirer
+        .prompt(promptArray);
+}
+
+function runInternInquirer() {
+    const promptArray = [{
+        type: "input",
+        message: "What school do you attend?",
+        name: "school"
+    }];
+
+    return inquirer
+        .prompt(promptArray);
+}
+
 
 
 let html = `< !DOCTYPE html >
