@@ -12,23 +12,23 @@ const fs = require("fs");
 function runInquirer() {
     const promptArray = [{
         type: "input",
-        message: "What is your name?",
+        message: "Please enter your name.",
         name: "name"
 
     }, {
         type: "input",
-        message: "What is your ID?",
+        message: "Please enter your employee ID.",
         name: "id"
 
     }, {
         type: "input",
-        message: "What is your email?",
+        message: "Please enter your email address.",
         name: "email"
 
     }, {
         type: "list",
 
-        message: "What is your title",
+        message: "Please enter your title.",
         choices: ["Manager", "Engineer", "Intern"],
         name: "title"
     }];
@@ -102,7 +102,7 @@ async function run() {
                     }
 
                 }).catch(function (err) {
-                       console.log("Sorry,there is an error.");
+                       console.log("Sorry, there is an error.");
                     console.log(err);
                 });
         });
@@ -112,6 +112,41 @@ async function run() {
           console.log(result);
     }
 
+    function displayTitle(employee) {
+        if (employee.title === "Manager") {
+            console.log(employee.officeNumber);
+            return `office number: ${employee.officeNumber}`;
+        }
+
+        if (employee.title === "Intern") {
+            return `school: ${employee.school}`;
+        }
+
+        if (employee.title === "Engineer") {
+            return `gitHub: ${employee.github}`;
+        }
+
+    }
+    function getCardHtml() {
+        let html = "";
+        for (j = 0; j < maxTimes; j++) {
+            console.log(employeeArray[j])
+            html += `<div class="card bg-dark justify-content-center align-items-center" style="width: 18rem;">
+                <div class="col card-header">
+                    <h4>${employeeArray[j].name}</h4>
+                </div>
+                <div class="col card-header">
+                    <h4>${employeeArray[j].title}</h4 >
+                </div >
+                <ul class="list-group list-group-flush text">
+                    <li class="list-group-item">ID: ${employeeArray[j].id}</li>
+                    <li class="list-group-item">Email: ${employeeArray[j].email}</li>
+                    <li class="list-group-item"> ${displayTitle(employeeArray[j])}</li>
+                </ul>
+            </div > `;
+        }
+        return html;
+    }
 
 let html = `< !DOCTYPE html >
 <html lang="en">
