@@ -13,11 +13,11 @@ function runInquirer() {
     const promptArray = [{
         type: "input",
         message: "What is your name?",
-           name: "name"
+        name: "name"
 
     }, {
         type: "input",
-         message: "What is your ID?",
+        message: "What is your ID?",
         name: "id"
 
     }, {
@@ -28,7 +28,7 @@ function runInquirer() {
     }, {
         type: "list",
 
-           message: "What is your title",
+        message: "What is your title",
         choices: ["Manager", "Engineer", "Intern"],
         name: "title"
     }];
@@ -70,7 +70,36 @@ function runInternInquirer() {
         .prompt(promptArray);
 }
 
+async function run() {
+    let employeeArray = [];
+    const maxTimes = 4;
+    for (i = 0; i < maxTimes; i++) {
+        const promise = new Promise((resolve, reject) => {
+            runInquirer()
+                .then(function ({ name, id, email, title }) {
 
+                    if (title === "Manager") {
+                        runManagerInquirer().then(function ({ officeNumber }) {
+                            this.employee = new Manager(name, id, email, officeNumber, title);
+                            console.log(officeNumber);
+                            employeeArray.push(employee);
+                            resolve("done");
+                        });
+                    } else if (title === "Engineer") {
+                        runEngineerInquirer().then(function ({ github }) {
+                            this.employee = new Engineer(name, id, email, github, title);
+                            console.log(github);
+                            employeeArray.push(employee);
+                            resolve("done");
+                        });
+                    } else if (title === "Intern") {
+                        runInternInquirer().then(function ({ school }) {
+                            this.employee = new Intern(name, id, email, school, title);
+                            console.log(school);
+                            employeeArray.push(employee);
+                            resolve("done");
+                        });
+                    }
 
 let html = `< !DOCTYPE html >
 <html lang="en">
