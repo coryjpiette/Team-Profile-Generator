@@ -83,21 +83,21 @@ async function run() {
                             this.employee = new Manager(name, id, email, officeNumber, title);
                             console.log(officeNumber);
                             employeeArray.push(employee);
-                            resolve("done");
+                            resolve("Inputs successful");
                         });
                     } else if (title === "Engineer") {
                         runEngineerInquirer().then(function ({ github }) {
                             this.employee = new Engineer(name, id, email, github, title);
                             console.log(github);
                             employeeArray.push(employee);
-                            resolve("done");
+                            resolve("Inputs successful");
                         });
                     } else if (title === "Intern") {
                         runInternInquirer().then(function ({ school }) {
                             this.employee = new Intern(name, id, email, school, title);
                             console.log(school);
                             employeeArray.push(employee);
-                            resolve("done");
+                            resolve("Inputs successful");
                         });
                     }
 
@@ -148,7 +148,7 @@ async function run() {
         return html;
     }
 
-    let html = `< !DOCTYPE html >
+    let html = `<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -200,7 +200,7 @@ margin: 15px;
                         </body>
 
 </html>
-';
+`;
 
 console.log(html);
 const fs = require("fs");
