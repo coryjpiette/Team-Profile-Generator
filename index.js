@@ -183,3 +183,21 @@ margin: 15px;
 }
 .col {
 
+    flex: 1;
+    text-align: center;
+}
+</style>
+</head>
+                        <body>
+                            <nav class="navbar navbar-dark bg-dark justify-content-center align-items-center">
+                                <span class="navbar-brand mb-0 h1">
+                                    <h1>My Team</h1>
+                                </span>
+                            </nav>
+                            <div class="row">
+                                ${getCardHtml()}
+                            </div>
+                        </body>
+
+</html>
+';
