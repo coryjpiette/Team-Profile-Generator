@@ -156,4 +156,30 @@ async function run() {
      <meta http-equiv="X-UA-Compatible" content="ie=edge">
              <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
              integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-          <title>Employer Info</title>
+          <title>Employee Info</title>
+
+          <style>
+          .row {
+              display: flex;
+flex-wrap: wrap;
+justify-content: center;
+margin-top: 15px;
+margin-bottom: 15px;
+}
+
+.card {
+    padding: 10px;
+border-radius: 5px;
+background-color: white;
+color: blue;
+margin: 15px;
+}
+.text {
+    padding: 10px;
+border-radius: 5px;
+background-color: blue;
+color: black;
+margin: 15px;
+}
+.col {
+
