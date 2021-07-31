@@ -12,23 +12,23 @@ const fs = require("fs");
 function runInquirer() {
     const promptArray = [{
         type: "input",
-        message: "Please enter your name.",
+        message: "Please enter your name:",
         name: "name"
 
     }, {
         type: "input",
-        message: "Please enter your employee ID.",
+        message: "Please enter your employee ID:",
         name: "id"
 
     }, {
         type: "input",
-        message: "Please enter your email address.",
+        message: "Please enter your email address:",
         name: "email"
 
     }, {
         type: "list",
 
-        message: "Please enter your title.",
+        message: "Please enter your title:",
         choices: ["Manager", "Engineer", "Intern"],
         name: "title"
     }];
@@ -40,7 +40,7 @@ function runInquirer() {
 function runManagerInquirer() {
     const promptArray = [{
         type: "input",
-        message: "What is your office number?",
+        message: "Please enter your office number:",
         name: "officeNumber"
     }];
 
@@ -51,7 +51,7 @@ function runManagerInquirer() {
 function runEngineerInquirer() {
     const promptArray = [{
         type: "input",
-        message: "What is your github?",
+        message: "Please enter your github address:",
         name: "github"
     }];
 
@@ -62,7 +62,7 @@ function runEngineerInquirer() {
 function runInternInquirer() {
     const promptArray = [{
         type: "input",
-        message: "What school do you attend?",
+        message: "Please enter your school:",
         name: "school"
     }];
 
