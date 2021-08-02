@@ -34,4 +34,6 @@ When the roster is completed, an output.html will be generated in the main folde
 
 - Office number, Github username, or school for Manager, Engineer, or Intern, respectively.
 
-VIDEO EXAMPLE:
+VIDEO EXAMPLE (the html created by this example can be seen [here](output/example.html)).
+
+![Alt Text](https://github.com/coryjpiette/Team-Profile-Generator/blob/main/assets/walkthrough.gif)
