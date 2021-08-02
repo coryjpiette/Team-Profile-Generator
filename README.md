@@ -6,7 +6,7 @@ REQUIREMENTS
 
 The allowable classes are: Employee, Manager, Engineer, and Intern.
 
-The primaey class of Employee is the parent class that requires the following inputs:
+The primary class of Employee is the parent class that requires the following inputs:
 
 - name (input)
 - id (input)
@@ -21,10 +21,10 @@ If "Engineer" is selected, the user will be required to enter a github username.
 If "Intern" is selected, the user will be required to enter their current school.
 
 USER INPUT 
-The project must prompt the user to build their team. The team MUST consist of a manager and any combination of engineers and interns.
+The application will prompt the user to build their team. The team MUST consist of a manager and any combination of engineers and interns.
 
 OUTPUT
-When the roster is completed, an output.html will be generate din the main folder. It will display:
+When the roster is completed, an output.html will be generated in the main folder. It will display:
 
 - Name
 
@@ -33,3 +33,5 @@ When the roster is completed, an output.html will be generate din the main folde
 - ID
 
 - Office number, Github username, or school for Manager, Engineer, or Intern, respectively.
+
+VIDEO EXAMPLE:
