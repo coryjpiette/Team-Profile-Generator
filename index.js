@@ -51,7 +51,7 @@ function runManagerInquirer() {
 function runEngineerInquirer() {
     const promptArray = [{
         type: "input",
-        message: "Please enter your github address:",
+        message: "Please enter your github username:",
         name: "github"
     }];
 
