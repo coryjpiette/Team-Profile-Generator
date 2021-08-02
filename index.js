@@ -171,13 +171,13 @@ margin-bottom: 15px;
     padding: 10px;
 border-radius: 5px;
 background-color: white;
-color: blue;
+color: skyblue;
 margin: 15px;
 }
 .text {
     padding: 10px;
 border-radius: 5px;
-background-color: blue;
+background-color: skyblue;
 color: black;
 margin: 15px;
 }
@@ -189,7 +189,7 @@ margin: 15px;
 </style>
 </head>
                         <body>
-                            <nav class="navbar navbar-dark bg-dark justify-content-center align-items-center">
+                            <nav class="navbar navbar-dark bg-danger justify-content-center align-items-center">
                                 <span class="navbar-brand mb-0 h1">
                                     <h1>My Team</h1>
                                 </span>
@@ -204,7 +204,7 @@ margin: 15px;
 
 console.log(html);
 const fs = require("fs");
-fs.writeFile('newfile.html', html, function (err) {
+fs.writeFile('output.html', html, function (err) {
     if (err) throw err;
     console.log('File is created successfully.');
 });
