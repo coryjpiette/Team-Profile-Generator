@@ -35,3 +35,5 @@ When the roster is completed, an output.html will be generated in the main folde
 - Office number, Github username, or school for Manager, Engineer, or Intern, respectively.
 
 VIDEO EXAMPLE:
+
+![image](https://user-images.githubusercontent.com/60293516/127871072-bd59d672-c458-4728-88da-c038d511745b.png)
