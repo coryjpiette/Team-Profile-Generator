@@ -36,4 +36,4 @@ When the roster is completed, an output.html will be generated in the main folde
 
 VIDEO EXAMPLE:
 
-
+![Alt Text](https://github.com/coryjpiette/Team-Profile-Generator/blob/main/assets/walkthrough.gif)
