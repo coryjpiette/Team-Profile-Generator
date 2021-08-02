@@ -204,7 +204,7 @@ margin: 15px;
 
 console.log(html);
 const fs = require("fs");
-fs.writeFile('output.html', html, function (err) {
+fs.writeFile('index.html', html, function (err) {
     if (err) throw err;
     console.log('File is created successfully.');
 });
